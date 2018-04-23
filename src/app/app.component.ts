@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  
+  public stateVar = "login";
+
+
+  public onLoginSuccess() {
+    this.stateVar = "survey";
+  }
 }

@@ -1,0 +1,13 @@
+<div class="loginBox">
+    <h3>Newport Education Group Portal</h3>
+    <p>用户名</p>
+    <input type="text" [(ngModel)]="urnm" >
+    <p>密码</p>
+    <input type="password" [(ngModel)]="pswrd">
+    <br>
+    <br>
+    <button class="submitBtn" (click)="onSubmit()">
+       登录
+    </button>
+    <p class="errMsg" *ngIf="errMsg != ''">{{errMsg}}</p>
+</div>

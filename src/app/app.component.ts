@@ -9,7 +9,12 @@ export class AppComponent {
   public stateVar = "login";
 
 
-  public onLoginSuccess() {
-    this.stateVar = "survey";
+  public onLoginSuccess(msg: string) {
+    if (msg == 'user') {
+      this.stateVar = 'survey1';
+    }
+    else if (msg == 'user1') {
+      this.stateVar = 'survey2';
+    }
   }
 }

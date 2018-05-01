@@ -1,7 +1,11 @@
 <div class="wrapper">
-  <login-view *ngIf="stateVar==='login'" (success)="onLoginSuccess()"></login-view>
+  <login-view *ngIf="stateVar==='login'" (success)="onLoginSuccess($event)"></login-view>
 
-  <ng-container *ngIf="stateVar==='survey'">
+  <ng-container *ngIf="stateVar==='survey1'">
     <iframe src='https://www.wjx.cn/jq/22895424,i,t.aspx?width=760&source=iframe' frameborder='0' class="surveyWindow"></iframe>
+  </ng-container>
+
+  <ng-container *ngIf="stateVar==='survey2'">
+    <iframe src='https://www.wjx.cn/jq/23183819,i,t.aspx?width=760&source=iframe' frameborder='0' class="surveyWindow"></iframe>
   </ng-container>
 </div>
